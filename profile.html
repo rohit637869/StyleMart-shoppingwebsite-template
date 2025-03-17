@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Profile - StyleMart</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="profile.js" defer></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">StyleMart</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="category.html">Categories</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="nav-icons">
+            <a href="#search"><i class="fas fa-search"></i></a>
+            <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+            <a href="profile.html" class="active"><i class="fas fa-user"></i></a>
+        </div>
+    </nav>
+
+    <main class="profile-page">
+        <div class="profile-header">
+            <div class="profile-avatar">
+                <img src="https://via.placeholder.com/150" alt="Profile Picture">
+                <button class="edit-avatar"><i class="fas fa-camera"></i></button>
+            </div>
+            <h1>John Doe</h1>
+            <p>Member since January 2024</p>
+        </div>
+
+        <div class="profile-content">
+            <div class="profile-sidebar">
+                <ul class="profile-nav">
+                    <li class="active"><a href="#personal-info"><i class="fas fa-user"></i> Personal Information</a></li>
+                    <li><a href="#orders"><i class="fas fa-shopping-bag"></i> Order History</a></li>
+                    <li><a href="#addresses"><i class="fas fa-map-marker-alt"></i> Addresses</a></li>
+                    <li><a href="#wishlist"><i class="fas fa-heart"></i> Wishlist</a></li>
+                    <li><a href="#settings"><i class="fas fa-cog"></i> Account Settings</a></li>
+                </ul>
+            </div>
+
+            <div class="profile-main">
+                <section id="personal-info" class="profile-section">
+                    <h2>Personal Information</h2>
+                    <form class="profile-form">
+                        <div class="form-group">
+                            <label>First Name</label>
+                            <input type="text" value="John">
+                        </div>
+                        <div class="form-group">
+                            <label>Last Name</label>
+                            <input type="text" value="Doe">
+                        </div>
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="email" value="john.doe@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label>Phone</label>
+                            <input type="tel" value="(555) 123-4567">
+                        </div>
+                        <button type="submit" class="save-btn">Save Changes</button>
+                    </form>
+                </section>
+
+                <section id="orders" class="profile-section hidden">
+                    <h2>Order History</h2>
+                    <div class="order-list">
+                        <div class="order-item">
+                            <div class="order-header">
+                                <span class="order-id">Order #12345</span>
+                                <span class="order-date">January 15, 2024</span>
+                                <span class="order-status">Delivered</span>
+                            </div>
+                            <div class="order-details">
+                                <img src="https://via.placeholder.com/100" alt="Product">
+                                <div class="order-info">
+                                    <h3>Casual T-Shirt</h3>
+                                    <p>Quantity: 1</p>
+                                    <p>Total: $29.99</p>
+                                </div>
+                                <button class="btn-secondary">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="addresses" class="profile-section hidden">
+                    <h2>Saved Addresses</h2>
+                    <div class="address-list">
+                        <div class="address-card">
+                            <div class="address-type">Home</div>
+                            <p>123 Main Street</p>
+                            <p>Apt 4B</p>
+                            <p>New York, NY 10001</p>
+                            <div class="address-actions">
+                                <button class="btn-secondary">Edit</button>
+                                <button class="btn-danger">Delete</button>
+                            </div>
+                        </div>
+                        <button class="add-address-btn"><i class="fas fa-plus"></i> Add New Address</button>
+                    </div>
+                </section>
+
+                <section id="wishlist" class="profile-section hidden">
+                    <h2>Wishlist</h2>
+                    <div class="wishlist-grid">
+                        <div class="product-card">
+                            <img src="https://via.placeholder.com/200" alt="Product">
+                            <h3>Classic Shoes</h3>
+                            <p class="price">$79.99</p>
+                            <button class="add-to-cart">Add to Cart</button>
+                            <button class="remove-wishlist"><i class="fas fa-trash"></i></button>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="settings" class="profile-section hidden">
+                    <h2>Account Settings</h2>
+                    <form class="settings-form">
+                        <div class="form-group">
+                            <label>Change Password</label>
+                            <input type="password" placeholder="Current Password">
+                            <input type="password" placeholder="New Password">
+                            <input type="password" placeholder="Confirm New Password">
+                        </div>
+                        <div class="form-group">
+                            <label>Email Notifications</label>
+                            <div class="checkbox-group">
+                                <label>
+                                    <input type="checkbox" checked> Order Updates
+                                </label>
+                                <label>
+                                    <input type="checkbox" checked> Promotions
+                                </label>
+                                <label>
+                                    <input type="checkbox"> Newsletter
+                                </label>
+                            </div>
+                        </div>
+                        <button type="submit" class="save-btn">Save Settings</button>
+                    </form>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>StyleMart is your one-stop destination for fashion and lifestyle shopping.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Shipping Information</a></li>
+                    <li><a href="#">Returns & Exchanges</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: info@stylemart.com</p>
+                <p>Phone: (555) 123-4567</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 StyleMart. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

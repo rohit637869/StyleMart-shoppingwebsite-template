@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categories - StyleMart</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="category.js" defer></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">StyleMart</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="category.html" class="active">Categories</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="nav-icons">
+            <a href="#search"><i class="fas fa-search"></i></a>
+            <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+            <a href="profile.html"><i class="fas fa-user"></i></a>
+        </div>
+    </nav>
+
+    <main class="category-page">
+        <div class="category-filters">
+            <div class="filter-section">
+                <h3>Filter By</h3>
+                <div class="filter-group">
+                    <h4>Price Range</h4>
+                    <label><input type="checkbox" name="price" value="0-25"> $0 - $25</label>
+                    <label><input type="checkbox" name="price" value="25-50"> $25 - $50</label>
+                    <label><input type="checkbox" name="price" value="50-100"> $50 - $100</label>
+                    <label><input type="checkbox" name="price" value="100+"> $100+</label>
+                </div>
+                <div class="filter-group">
+                    <h4>Size</h4>
+                    <label><input type="checkbox" name="size" value="xs"> XS</label>
+                    <label><input type="checkbox" name="size" value="s"> S</label>
+                    <label><input type="checkbox" name="size" value="m"> M</label>
+                    <label><input type="checkbox" name="size" value="l"> L</label>
+                    <label><input type="checkbox" name="size" value="xl"> XL</label>
+                </div>
+                <div class="filter-group">
+                    <h4>Color</h4>
+                    <label><input type="checkbox" name="color" value="black"> Black</label>
+                    <label><input type="checkbox" name="color" value="white"> White</label>
+                    <label><input type="checkbox" name="color" value="blue"> Blue</label>
+                    <label><input type="checkbox" name="color" value="red"> Red</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="category-content">
+            <div class="category-header">
+                <h1>All Categories</h1>
+                <div class="sort-options">
+                    <label for="sort">Sort by:</label>
+                    <select id="sort">
+                        <option value="popular">Most Popular</option>
+                        <option value="newest">Newest</option>
+                        <option value="price-low">Price: Low to High</option>
+                        <option value="price-high">Price: High to Low</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="category-grid">
+                <div class="category-section">
+                    <h2>Men's Fashion</h2>
+                    <div class="product-grid">
+                        <div class="product-card" data-product-id="mens1">
+                            <img src="https://via.placeholder.com/300x400" alt="Men's T-Shirt">
+                            <h3>Classic T-Shirt</h3>
+                            <p class="price">$24.99</p>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                        <div class="product-card" data-product-id="mens2">
+                            <img src="https://via.placeholder.com/300x400" alt="Men's Jeans">
+                            <h3>Slim Fit Jeans</h3>
+                            <p class="price">$59.99</p>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="category-section">
+                    <h2>Women's Fashion</h2>
+                    <div class="product-grid">
+                        <div class="product-card" data-product-id="womens1">
+                            <img src="https://via.placeholder.com/300x400" alt="Women's Dress">
+                            <h3>Summer Dress</h3>
+                            <p class="price">$49.99</p>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                        <div class="product-card" data-product-id="womens2">
+                            <img src="https://via.placeholder.com/300x400" alt="Women's Blouse">
+                            <h3>Casual Blouse</h3>
+                            <p class="price">$34.99</p>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="category-section">
+                    <h2>Accessories</h2>
+                    <div class="product-grid">
+                        <div class="product-card" data-product-id="acc1">
+                            <img src="https://via.placeholder.com/300x400" alt="Watch">
+                            <h3>Classic Watch</h3>
+                            <p class="price">$89.99</p>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                        <div class="product-card" data-product-id="acc2">
+                            <img src="https://via.placeholder.com/300x400" alt="Sunglasses">
+                            <h3>Designer Sunglasses</h3>
+                            <p class="price">$129.99</p>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="category-section">
+                    <h2>Footwear</h2>
+                    <div class="product-grid">
+                        <div class="product-card" data-product-id="shoe1">
+                            <img src="https://via.placeholder.com/300x400" alt="Sneakers">
+                            <h3>Casual Sneakers</h3>
+                            <p class="price">$79.99</p>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                        <div class="product-card" data-product-id="shoe2">
+                            <img src="https://via.placeholder.com/300x400" alt="Formal Shoes">
+                            <h3>Leather Formal Shoes</h3>
+                            <p class="price">$99.99</p>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>StyleMart is your one-stop destination for fashion and lifestyle shopping.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Shipping Information</a></li>
+                    <li><a href="#">Returns & Exchanges</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: info@stylemart.com</p>
+                <p>Phone: (555) 123-4567</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 StyleMart. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
